@@ -1,0 +1,94 @@
+body {
+  background-image: linear-gradient(to bottom, #7B7987, #A00609);
+  height: 100%;
+  margin: 0;
+  padding: auto;
+  font-family: Montserrat, sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.logoHospital {   
+  margin-top: 50px;
+  width: 100%;
+  position: absolute;  
+  z-index: 2; /* Logo com z-index maior para aparecer sobre a imagem */
+}
+
+.logoHospital img {
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+.fotoHospital {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Imagem de fundo */
+}
+
+.fotoHospital img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8; /* Transparência para dar destaque aos elementos acima */
+  -webkit-mask-image: linear-gradient(to top, #7B7987 );
+  mask-image: linear-gradient(to bottom, #A00609 50px, transparent);
+}
+
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3; /* Formulário com maior prioridade de exibição */
+  padding: 20px;
+  background-color:  bisque;
+  mask-image: (bisque , transparent);
+  border-radius: 10px;
+}
+
+.form label,
+.form input {
+  display: block;
+  margin: 5px 0;
+  color: rgb(0, 0, 0);
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  border-radius: 5px;
+  width:  250px;
+  height: 30px;
+  
+}
+
+.btn-entrar {
+  background-color: #6B0303; 
+  color: white; 
+  border: none; 
+  padding: 10px 10px; /* Espaçamento interno */
+  text-align: center; /* Centraliza o texto */
+  text-decoration: none;
+  display: inline-block; 
+  font-size: 25px; 
+  margin: 5px 2px; 
+  cursor: pointer; 
+  border-radius: 5px;
+  font-weight: bold;
+  width: 250px; /* Largura fixa */
+  height: 50px; /* Altura fixa para melhor centralização */
+  
+}
+
+.btn-entrar:hover {
+  background-color: #6B0303; 
+}
+
+
