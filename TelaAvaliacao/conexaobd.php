@@ -17,11 +17,16 @@ try {
 // Processa os dados enviados pelo formulário
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Captura os dados do formulário
-    $resposta = $_POST['resposta'];
-    $feedback = $_POST['feedback'] ?? '';
+    $resposta = $_POST['resposta'] ?? null; // Captura a nota selecionada
+    $feedback = $_POST['feedback'] ?? '';   // Captura o feedback (opcional)
 
-    // Define valores fixos para id_dispositivo, id_pergunta e id_setor
-    // (Esses valores podem ser ajustados de acordo com o contexto do seu sistema)
+    // Validação básica dos dados
+    if ($resposta === null) {
+        echo "Por favor, selecione uma nota.";
+        exit;
+    }
+
+    // Valores fixos para id_dispositivo, id_pergunta e id_setor
     $id_dispositivo = 1; // Substitua pelo ID do dispositivo correto
     $id_pergunta = 1;    // Substitua pelo ID da pergunta correta
     $id_setor = 1;       // Substitua pelo ID do setor correto
@@ -44,9 +49,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $stmt->execute();
 
-        echo "Avaliação salva com sucesso!";
+        // Feedback para o usuário
+        echo "Obrigado! Sua avaliação foi registrada com sucesso.";
     } catch (PDOException $e) {
         echo "Erro ao salvar a avaliação: " . $e->getMessage();
     }
+} else {
+    echo "Método de requisição inválido.";
 }
 ?>
