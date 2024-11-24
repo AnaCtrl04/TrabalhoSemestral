@@ -1,0 +1,71 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #4f4f4f, #b30000);
+    color: #fff;
+  }
+  
+  .dashboard {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo .icon {
+    width: 50px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  main {
+    margin-top: 20px;
+  }
+  
+  .overview {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .circle {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+  }
+  
+  .evaluations {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+  }
+  
+  .evaluations h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .evaluation-item {
+    height: 30px;
+    background-color: #d3d3d3;
+    margin: 10px 0;
+    border-radius: 5px;
+  }
+  
