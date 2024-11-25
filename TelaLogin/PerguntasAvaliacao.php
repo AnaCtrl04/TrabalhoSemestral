@@ -1,4 +1,4 @@
-<?php include 'cadastrar_pergunta.php'; ?>
+<?php include 'cadastrar_perguntas.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">

@@ -14,11 +14,24 @@
         </div>
         <div class="actions">
             <button class="btn" id="voltar" onclick="window.history.back()">Voltar</button>
-            <button class="btn" id="cadastrar">Cadastrar</button>
-            <button class="btn" id="ativar-desativar">Ativar/Desativar</button>
         </div>
         <div class="inputs">
-            <input type="text" placeholder="Digite sua pergunta de avaliação aqui..." class="input-field">
+            <!-- Formulário para cadastrar perguntas -->
+            <form action="cadastrar_perguntas.php" method="POST">
+                <label for="texto">Texto da Pergunta:</label>
+                <input type="text" id="texto" name="texto" class="input-field" placeholder="Digite sua pergunta..." required>
+                
+                <div class="checkbox-container">
+                    <label for="status">Ativo:</label>
+                    <input type="checkbox" id="status" name="status" checked>
+                </div>
+                
+                <button type="submit">Cadastrar</button>
+            </form>
+            
+            <div class="actions">
+                <a href="PerguntasAvaliacao.php">Voltar</a>
+            </div>
         </div>
     </div>
 </body>

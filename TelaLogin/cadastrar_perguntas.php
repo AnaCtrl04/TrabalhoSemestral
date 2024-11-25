@@ -25,3 +25,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 ?>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Perguntas</title>
+    <link rel="stylesheet" href="PerguntasAvaliacao.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Perguntas</h1>
+        <!-- Mensagem de feedback -->
+        <?php if (!is_null($mensagem)): ?>
+            <p class="message"><?php echo htmlspecialchars($mensagem); ?></p>
+        <?php endif; ?>
+        <a href="PerguntasAvaliacao.php">Voltar</a>
+    </div>
+</body>
+</html>
