@@ -1,0 +1,31 @@
+body {
+    background-image: linear-gradient(to bottom, #7B7987, #A00609);
+    height: 100vh; /* Altura da tela inteira */
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+  }
+  
+  .logo {
+    position: absolute; /* Posiciona a logo fora do fluxo normal */
+    top: 20px; /* Distância do topo */
+    left: 20px; /* Distância da esquerda */
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .logo img {
+    width: 70px;
+    height: auto;
+  }
+
+.agradecimento {
+    color: white;
+  }

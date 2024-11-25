@@ -141,3 +141,4 @@ input[type="radio"]:checked + .color-box {
   border: 3px solid #000; /* Exemplo de borda para indicar seleção */
   transform: scale(1.2); /* Aumenta o tamanho para destacar */
 }
+
