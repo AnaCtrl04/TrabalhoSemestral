@@ -1,3 +1,7 @@
+<?php
+include 'perguntas.php';
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -14,8 +18,7 @@
         </div>
         <div class="pergunta">
             <h1>
-              <!--  <?php echo htmlspecialchars($pergunta['texto'], ENT_QUOTES, 'UTF-8'); ?> -->
-            COMO VOCÊ AVALIA O ATENDIMENTO?
+               <?php echo htmlspecialchars($pergunta['texto'], ENT_QUOTES, 'UTF-8'); ?> 
             </h1>
             <form action="salvar.php" method="post">
                 <!-- Escala de cores -->
